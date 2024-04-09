@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none !important;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    padding: 0;
+}
+.homep{
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    animation: zoomIn 5s ease-in-out infinite alternate;
+}
+@keyframes zoomIn {
+    from { background-position: 0 0; }
+    to { background-position: 0 100%; }
+}
+.homep .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 40px;
+}
+.homep .navbar .logo a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3B7EFF;
+}
+.homep .navbar .list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.homep .navbar .list ul a{
+    color: #042C74;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+}
+.homep .navbar .list ul a:hover{
+    color: #3B7EFF;
+}
+.homep .navbar #menu{
+    display: none;
+}
+.homep .navbar .list .btn-contact{
+    background-color: #3B7EFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.homep .navbar .list .btn-contact:hover{
+    color: white;
+    background-color: #042C74;
+}
+.homep .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 100px;
+}
+.homep .center .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 120px;
+}
+.homep .center .left .home-title{
+    font-size: 3.2rem;
+    color: white;
+}
+.homep .center .left p{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.homep .center .left .home-btns{
+    display: flex;
+    gap: 20px;
+}
+.homep .center .left .home-btns .btn1 , .btn2{
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #3B7EFF;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.homep .center .left .home-btns .btn2{
+    color: #042C74;
+    background-color: white;
+    /* border: 1px solid #3B7EFF; */
+}
+.homep .center .left .home-btns .btn1:hover{
+    color: #3B7EFF;
+    background-color: white;
+    transform: scale(1.1);
+    /* border: 1px solid #3B7EFF; */
+}
+.homep .center .left .home-btns .btn2:hover{
+    color: #3B7EFF;
+    background-color: white;
+    transform: scale(1.1);
+}
+.clinic-presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+}
+.clinic-presentation .clinic-left img{
+    border-radius: 50px;
+}
+.clinic-presentation .clinic-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.clinic-presentation .clinic-right h1{
+    font-size: 3.2rem;
+    color: #042C74;
+}
+.clinic-presentation .clinic-right p{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.clinic-presentation .clinic-right .clinic-btn{
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #3B7EFF;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.clinic-presentation .clinic-right .clinic-btn:hover{
+    color: #3B7EFF;
+    background-color: white;
+    border: 2px solid #3B7EFF;
+    transform: scale(1.1);
+}
+.numbers{
+    padding: 0px 100px 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.numbers h1{
+    color: #042C74;
+    text-align: center;
+}
+.numbers h1 b{
+    color: #3B7EFF;
+}
+.numbers p{
+    color: #042C74;
+}
+.reason-smile{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color: #042C74;
+}
+.reason-smile .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.reason-smile .left h1{
+    font-size: 3.2rem;
+    color: white;
+}
+.reason-smile .left p{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.reason-smile .left button{
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #3B7EFF;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.reason-smile .left button:hover{
+    color: #3B7EFF;
+    background-color: white;
+    transform: scale(1.1);
+}
+.reason-smile .right img{
+    border-radius: 100px;
+}
+.services{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.services .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.services .top h1{
+    font-size: 3.2rem;
+    color: #042C74;
+}
+.services .top p{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.services .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.services .bottom .service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: 2px solid #042C74;
+    border-radius: 30px;
+}
+.services .bottom .service-card img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.services .bottom .service-card .description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.services .bottom .service-card .description h2{
+    color: #042C74;
+    font-size: 1.5rem;
+}
+.services .bottom .service-card .description p{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.pricese{
+    padding: 100px;
+    background: linear-gradient(rgba(4,44,116,0.8),rgba(4,44,116,0.8)), url(./images/female-nurse-practicing-medicine-clinic.jpg);
+    /* background-color: #042C74; */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+.pricese h1{
+    font-size: 3.2rem;
+    color: white;
+}
+.pricese .list-pricese{
+    display: flex;
+    gap: 100px;
+}
+.pricese .list-pricese .price{
+    background-color: #3B7EFF;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+}
+.pricese .list-pricese .price ul li{
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.doctors{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+}
+.doctors .top{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.doctors .top h1{
+    font-size: 3.2rem;
+    color: #042C74;
+}
+.doctors .top p{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.doctors .bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.doctors .bottom .doctor-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #042C74;
+    border-radius: 30px;
+}
+.doctors .bottom .doctor-card img{
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.doctors .bottom .doctor-card .doctor-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    text-align: center;
+}
+.doctors .bottom .doctor-card .doctor-info h2{
+    color: #042C74;
+    font-size: 1.5rem;
+}
+.doctors .bottom .doctor-card .doctor-info p{
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+.doctors .doctors-btn{
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #3B7EFF;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.doctors .doctors-btn:hover{
+    color: #3B7EFF;
+    background-color: white;
+    border: 1px solid #3B7EFF;
+    transform: scale(1.1);
+}
+#doctor-show{
+    display: none;
+}
+.client{
+    padding: 100px;
+    background-color: #042C74;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.client .client-title{
+    color: white;
+    font-size: 3.2rem;
+}
+.client .client-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.client .client-cards .cl-card{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+}
+.client .client-cards .cl-card .profile{
+    display: flex;
+    gap: 20px;
+}
+.client .client-cards .cl-card h1{
+    color: #3B7EFF;
+}
+.client .client-cards .cl-card p{
+    line-height: 30px;
+}
+.client .client-cards .cl-card .profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+.client .client-cards .cl-card .profile-info p{
+    color: rgb(226, 226, 226);
+    font-weight: 100;
+}
+.form{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.form h1{
+    font-size: 3.2rem;
+    color: #042C74;
+    text-align: center;
+}
+.form .form-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+}
+.form .form-inputs input,select{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #042C74;
+    outline: none;
+}
+.form .reserve-now{
+    font-size: 1.2rem;
+    padding: 20px 100px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #3B7EFF;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.form .reserve-now:hover{
+    color: #3B7EFF;
+    background-color: white;
+    border: 1px solid #3B7EFF;
+    transform: scale(1.1);
+}
+.form .result .result-form{
+    font-size: 3.2rem;
+    color: #042C74;
+    padding: 20px;
+}
+.footer{
+    padding: 50px 100px;
+    background-color: #042C74;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+.footer .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+}
+.footer .top .footer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer .top .footer-info h1{
+    color: #3B7EFF;
+}
+.footer .top .footer-info p{
+    line-height: 30px;
+}
+.footer .top .footer-info .social-icons{
+    display: flex;
+    gap: 30px;
+}
+.footer .top .footer-info .social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    transition: 0.5s ease;
+}
+.footer .top .footer-info .social-icons a:hover{
+    color: #3B7EFF;
+    transform: scale(1.1);
+}
+.footer .top .working-days{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer .top .working-days h2{
+    color: #3B7EFF;
+}
+.footer .top .working-days ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer .top .clinic-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer .top .clinic-info .location{
+    color: #3B7EFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .top .clinic-info div{
+    line-height: 30px;
+}
+@media only screen and (max-width:1000px){
+    .homep {
+        animation: moveUp 5s ease-in-out infinite alternate;
+    }
+    .homep .navbar{
+        margin: 20px 40px;
+    }
+    .homep .navbar #menu{
+        display: block;
+        font-size: 2.2rem;
+    }
+    .homep .navbar .list ul{
+        flex-direction: column;
+        position: absolute;
+        left: -100%;
+        top: 8%;
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 10px;
+    }
+    .homep .navbar .list .show{
+        right: 12%;
+        left: 60%;
+    }
+    .homep .navbar .list .btn-contact{
+        background-color: white;
+        color: #042C74;
+        padding: 0px 0px;
+        border-radius: 0px;
+    }
+    .homep{
+        height: 70vh;
+    }
+    .homep .center{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .homep .center .left{
+        align-items: center;
+        text-align: center;
+    }
+    .clinic-presentation{
+        flex-direction: column-reverse;
+    }
+    .clinic-presentation .clinic-right{
+        text-align: center;
+    }
+    .numbers{
+        flex-direction: column;
+    }
+    .reason-smile{
+        flex-direction: column;
+    }
+    .reason-smile .left{
+        text-align: center;
+    }
+    .services .bottom{
+        flex-direction: column;
+    }
+    .pricese .list-pricese{
+        flex-direction: column;
+    }
+    .doctors .bottom{
+        flex-direction: column;
+    }
+    .client .client-cards{
+        flex-direction: column;
+    }
+    .footer .top{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
