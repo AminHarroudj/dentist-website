@@ -286,6 +286,7 @@ li{
 .pricese h1{
     font-size: 3.2rem;
     color: white;
+    text-align: center;
 }
 .pricese .list-pricese{
     display: flex;
@@ -389,6 +390,7 @@ li{
 .client .client-title{
     color: white;
     font-size: 3.2rem;
+    text-align: center;
 }
 .client .client-cards{
     display: flex;
@@ -537,8 +539,8 @@ li{
     line-height: 30px;
 }
 @media only screen and (max-width:1000px){
-    .homep {
-        animation: moveUp 5s ease-in-out infinite alternate;
+    .homep{
+        height: 100vh;
     }
     .homep .navbar{
         margin: 20px 40px;
@@ -551,7 +553,7 @@ li{
         flex-direction: column;
         position: absolute;
         left: -100%;
-        top: 8%;
+        top: 12%;
         background-color: white;
         padding: 20px 40px;
         border-radius: 10px;
@@ -583,29 +585,74 @@ li{
     .clinic-presentation .clinic-right{
         text-align: center;
     }
-    .numbers{
-        flex-direction: column;
-    }
-    .reason-smile{
+    .numbers,.reason-smile,.services .bottom,.pricese .list-pricese,.doctors .bottom,.client .client-cards{
         flex-direction: column;
     }
     .reason-smile .left{
         text-align: center;
     }
-    .services .bottom{
-        flex-direction: column;
-    }
-    .pricese .list-pricese{
-        flex-direction: column;
-    }
-    .doctors .bottom{
-        flex-direction: column;
-    }
-    .client .client-cards{
-        flex-direction: column;
-    }
     .footer .top{
         flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer .top .footer-info,.clinic-info{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footer .bottom{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:600px){
+    .homep{
+        height: 100vh;
+    }
+    .homep .navbar{
+        margin: 20px;
+    }
+    .homep .center{
+        padding: 0px 20px;
+    }
+    .homep .center .left{
+        margin-top: 50px;
+    }
+    .homep .center .left .home-btns{
+        flex-direction: column;
+    }
+    .clinic-presentation .clinic-left img{
+        width: 300px;
+    }
+    .reason-smile .right img{
+        width: 300px;
+    }
+    .services .bottom .service-card img{
+        width: 100px;
+    }
+    .pricese .list-pricese .price{
+        width: 300px;
+    }
+    .doctors .bottom .doctor-card img{
+        width: 150px;
+    }
+    .client .client-cards .cl-card .profile img{
+        width: 50px;
+        height: 50px;
+    }
+    .form .form-inputs{
+        width: 300px;
+    }
+    .form .reserve-now{
+        padding: 20px 30px;
+    }
+    .clinic-presentation,.reason-smile,.services,.pricese,.doctors,.client,.form,.footer{
+        padding: 50px 20px;
+        gap: 50px;
+    }
+    .pricese .list-pricese{
         gap: 50px;
     }
 }
